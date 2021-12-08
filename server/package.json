@@ -1,11 +1,11 @@
 {
-  "name": "Hayroo",
+  "name": "Aaryan",
   "version": "1.0.0",
   "description": "A E-commerce website.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
