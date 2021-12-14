@@ -7,7 +7,7 @@ export const LayoutContext = createContext();
 const Layout = ({ children }) => {
   return (
     <Fragment>
-      <div className="flex-grow">
+      <div className="flex-grow bg-black text-white">
         <Navber />
         <LoginSignup />
         <CartModal />
