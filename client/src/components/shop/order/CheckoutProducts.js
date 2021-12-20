@@ -67,13 +67,13 @@ export const CheckoutComponent = (props) => {
                   className="p-4 md:p-8"
                 >
                   {state.error ? (
-                    <div className="bg-red-200 py-2 px-4 rounded">
+                    <div className="bg-red-600 py-2 px-4 rounded text-black">
                       {state.error}
                     </div>
                   ) : (
                     ""
                   )}
-                  <div className="flex flex-col py-2">
+                  <div className="flex flex-col py-2 text-black">
                     <label htmlFor="address" className="pb-2">
                       Dalivery Address
                     </label>
@@ -92,7 +92,7 @@ export const CheckoutComponent = (props) => {
                       placeholder="Address..."
                     />
                   </div>
-                  <div className="flex flex-col py-2 mb-2">
+                  <div className="flex flex-col py-2 mb-2 text-black">
                     <label htmlFor="phone" className="pb-2">
                       Phone
                     </label>
@@ -108,7 +108,7 @@ export const CheckoutComponent = (props) => {
                       type="number"
                       id="phone"
                       className="border px-4 py-2"
-                      placeholder="+880"
+                      placeholder="+91"
                     />
                   </div>
                   <DropIn
@@ -188,13 +188,13 @@ const CheckoutProducts = ({ products }) => {
                     {product.pName}
                   </div>
                   <div className="md:ml-6 font-semibold text-gray-600 text-sm">
-                    Price : ${product.pPrice}.00{" "}
+                    Price : ₹{product.pPrice}.00{" "}
                   </div>
                   <div className="md:ml-6 font-semibold text-gray-600 text-sm">
                     Quantitiy : {quantity(product._id)}
                   </div>
                   <div className="font-semibold text-gray-600 text-sm">
-                    Subtotal : ${subTotal(product._id, product.pPrice)}.00
+                    Subtotal : ₹{subTotal(product._id, product.pPrice)}.00
                   </div>
                 </div>
               </div>

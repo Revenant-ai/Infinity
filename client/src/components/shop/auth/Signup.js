@@ -63,7 +63,7 @@ const Signup = (props) => {
       <div className="text-center text-2xl mb-6">Register</div>
       <form className="space-y-4">
         {data.success ? alert(data.success, "green") : ""}
-        <div className="flex flex-col">
+        <div className="flex flex-col  text-black">
           <label htmlFor="name">
             Name<span className="text-sm text-gray-600 ml-1">*</span>
           </label>
@@ -85,7 +85,7 @@ const Signup = (props) => {
           />
           {!data.error ? "" : alert(data.error.name, "red")}
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col  text-black">
           <label htmlFor="email">
             Email address<span className="text-sm text-gray-600 ml-1">*</span>
           </label>
@@ -107,7 +107,7 @@ const Signup = (props) => {
           />
           {!data.error ? "" : alert(data.error.email, "red")}
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col  text-black">
           <label htmlFor="password">
             Password<span className="text-sm text-gray-600 ml-1">*</span>
           </label>
@@ -129,7 +129,7 @@ const Signup = (props) => {
           />
           {!data.error ? "" : alert(data.error.password, "red")}
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col  text-black">
           <label htmlFor="cPassword">
             Confirm password
             <span className="text-sm text-gray-600 ml-1">*</span>
@@ -153,7 +153,7 @@ const Signup = (props) => {
           {!data.error ? "" : alert(data.error.cPassword, "red")}
         </div>
         <div className="flex flex-col space-y-2 md:flex-row md:justify-between md:items-center">
-          <div>
+          <div className=" text-black">
             <input
               type="checkbox"
               id="rememberMe"

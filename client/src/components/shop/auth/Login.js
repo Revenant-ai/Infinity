@@ -42,16 +42,16 @@ const Login = (props) => {
 
   return (
     <Fragment>
-      <div className="text-center text-2xl mb-6">Login</div>
+      <div className="text-center text-2xl mb-6 text-black">Login</div>
       {layoutData.loginSignupError ? (
-        <div className="bg-red-200 py-2 px-4 rounded">
+        <div className="bg-red-200 py-2 px-4 rounded  text-black">
           You need to login for checkout. Haven't accont? Create new one.
         </div>
       ) : (
         ""
       )}
       <form className="space-y-4">
-        <div className="flex flex-col">
+        <div className="flex flex-col text-black">
           <label htmlFor="name">
             Username or email address
             <span className="text-sm text-gray-600 ml-1">*</span>
@@ -70,7 +70,7 @@ const Login = (props) => {
           />
           {!data.error ? "" : alert(data.error)}
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col text-black">
           <label htmlFor="password">
             Password<span className="text-sm text-gray-600 ml-1">*</span>
           </label>
@@ -89,14 +89,14 @@ const Login = (props) => {
           {!data.error ? "" : alert(data.error)}
         </div>
         <div className="flex flex-col space-y-2 md:flex-row md:justify-between md:items-center">
-          <div>
+          <div class="text-black">
             <input
               type="checkbox"
               id="rememberMe"
               className="px-4 py-2 focus:outline-none border mr-1"
             />
             <label htmlFor="rememberMe">
-              Remember me<span className="text-sm text-gray-600">*</span>
+              Remember me<span className="text-sm text-black">*</span>
             </label>
           </div>
           <a className="block text-gray-600" href="/">
